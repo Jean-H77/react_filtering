@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import BusinessDetails from './BusinessDetails';
+import BusinessDetailsPage from './components/BusinessDetailsPage';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/data/:city" element={<BusinessDetails />} />
+        <Route path="/api" element={
+        <BusinessDetailsPage />
+        } />
       </Routes>
     </Router>
   );
