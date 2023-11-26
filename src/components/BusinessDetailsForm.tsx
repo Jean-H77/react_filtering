@@ -131,7 +131,6 @@ const BusinessForm: React.FC<BusinessFormProps> = ({ updateBusinessData }) => {
               id="both"
               name="status"
               value="both"
-              checked
               onChange={handleInputChange}
             />
             <label htmlFor="both">Both</label>
